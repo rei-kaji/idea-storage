@@ -2,8 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  /* height: 90vh; */
   padding: 0 20px;
+  margin-top: 80px;
 }
 
 .ideacontainer {
@@ -18,7 +19,6 @@
   padding: 0px 40px;
   -webkit-box-shadow: 3px 7px 9px -1px rgba(0, 0, 0, 0.61);
   box-shadow: 3px 7px 9px -1px rgba(0, 0, 0, 0.61);
-  margin-top: 50px;
 }
 
 .ideacontainer h2 {
@@ -41,10 +41,20 @@
   width: 450px;
   height: 120px;
   outline: none;
-  padding: 0px 5px;
+  padding: 5px 5px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border-radius: 5px;
+  border: 1px black solid;
+}
+
+.ideacontainer .Dropdown-root {
+  width: 450px;
+}
+
+.ideacontainer .Dropdown-control {
+  width: 450px;
   border-radius: 5px;
   border: 1px black solid;
 }
@@ -69,4 +79,18 @@
 .addButton:hover {
   transform: translateY(5px);
   box-shadow: none;
+}
+
+@media (max-width: 767px) {
+  .ideacontainer {
+    width: 300px;
+  }
+
+  .ideacontainer input {
+    width: 100%;
+  }
+
+  .ideacontainer textarea {
+    width: 100%;
+  }
 }
